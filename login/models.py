@@ -7,7 +7,7 @@ class Register(models.Model):
     email=models.EmailField(unique=True)
     password = models.CharField(max_length=100)
     organization=models.CharField(max_length=100,default="")
-    phone_no=models.IntegerField(default=0)
+    phone_no=models.BigIntegerField(default=0)
     state=models.CharField(max_length=100,default="")
     city=models.CharField(max_length=100,default="")
 
