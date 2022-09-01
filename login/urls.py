@@ -5,7 +5,7 @@ from . import views
 from .views import *
 
 urlpatterns = [
-    path('register/',views.home,name="home"),
+    path('',views.home,name="home"),
     path('result/',views.result,name="result"),
     path('create/', GetView.as_view()),
     path('uploadapi/', UploadView.as_view()),
